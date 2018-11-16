@@ -1,0 +1,64 @@
+overview
+https://solarbotics.com/product/35240/
+
+tutorial
+https://playground.arduino.cc/Tutorials/GPS
+
+https://books.google.ca/books?id=6YsaN2rPI9kC&pg=PT632&lpg=PT632&dq=sample+C+code+on+parallax+gps+module&source=bl&ots=DqOj-ST3PY&sig=y6DlZQl3_OzvQGNRtBPXaKG5D0A&hl=en&sa=X&ved=0ahUKEwiN0tqioMfZAhUDKGMKHSBmDwwQ6AEIaTAN#v=onepage&q=sample%20C%20code%20on%20parallax%20gps%20module&f=false
+
+PDF book
+http://www.academia.edu/27495487/C_Programming_for_Arduino
+
+Making Things Talk P298
+
+pseudo code
+https://learn.parallax.com/support/reference/propeller-blocklyprop-block-reference/sensor/gps/gps-wiring-example-code
+
+
+Implementation Outline
+Make a setup() and clear_buffer()
+
+1. laptop can receive some random data from the GPS module
+2. laptop can receive and display Time Stamp of the GPS string properly
+3. laptop can receive and display all fields of GPS string properly
+
+
+Documentation for report
+1. C_Programming_for_Arduino P369 background info on Parallax GPS receiver module
+The Parallax GPS Receiver is based on the PMB-248 specification
+
+2. data sheet
+P2 Electronic Connections 
+4800 baud Serial TTL interface
+Requires single +5VDC supply
+
+ASCII code of carriage return in decimal = 13
+
+
+
+baud rate calculator
+http://mspgcc.sourceforge.net/baudrate.html
+
+
+UCBRx: Clock prescaler setting of the Baud rate generator. The 16-bit value of (UCAxBR0 + UCAxBR1 × 256) forms the prescaler value.
+UCA0BR1 is the "overflow" of UCA0BR0. 
+
+MSP430 Serial communication Sample Program (demonstrate 1.set baud rate 2. transmit data 3. receive data)
+https://roboticsclub.org/redmine/projects/infotron/wiki/MSP430USCIA_UART
+
+
+Python docomentation
+pySerial documentation
+http://pyserial.readthedocs.io/en/latest/shortintro.html
+
+Python Serial: How to use the read or readline function to read more than 1 character at a time
+https://stackoverflow.com/questions/16077912/python-serial-how-to-use-the-read-or-readline-function-to-read-more-than-1-char
+
+delay function in MSP430
+https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/179364
+
+Serial Communication 
+https://learn.sparkfun.com/tutorials/serial-communication
+
+sublime
+Ctrl + M : jump between matching brackets.
