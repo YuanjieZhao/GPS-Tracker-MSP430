@@ -9,7 +9,7 @@ The components of the GPS tracker is connected in Figure 1. The SIO pin of the G
 
 **Figure 1: Connection between Parallax GPS Receiver and MSP430**
 
-![Circuit-Diagram](media\Circuit-Diagram.png)
+![Circuit-Diagram](media/Circuit-Diagram.png)
 
 
 
@@ -38,7 +38,7 @@ Table 1 shows the meaning of each message field:
 
 **Table 1: Message field of $GPGGA string [1]**
 
-![Message-field-of-GPGGA-string](media\Message-field-of-GPGGA-string.png)
+![Message-field-of-GPGGA-string](media/Message-field-of-GPGGA-string.png)
 
 This GPS tracker focuses on the first seven message fields since they are the most important ones. Once the GPS module starts transmitting valid GSP raw strings, the GPS parser program searches for the $GPGGA string, parses the first seven fields, and send these data to the host computer via the USB cable. After receiving the parsed results, the host computer then uses a Python program to print relevant information to the terminal. This procedure repeats every ten seconds. The GPS parser C program and the Python program used by the GPS tracker can be found in the `src` directory.
 
@@ -46,4 +46,4 @@ This GPS tracker focuses on the first seven message fields since they are the mo
 
 **Figure 2: Sample output from the Python program**
 
-![GPS-tracker-output](media\GPS-tracker-output.png)
+![GPS-tracker-output](media/GPS-tracker-output.png)
